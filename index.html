@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+  </head>
+  <body>
+    <div id="main-div">
+      <div class="cart-div">
+        <div class="items-column">
+          <div
+            class="item-div column-heads"
+            style="height: 1.3rem; padding-left: 25px"
+          >
+            <div class="head-title">PRODUCT</div>
+            <div class="head-title">PRICE</div>
+            <div class="head-title">QUANTITY</div>
+            <div class="head-title">TOTAL</div>
+          </div>
+          <div class="item-div bag">
+            <div class="item">
+              <div class="item-image bag-image">
+                <img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEBUQEw8QEw0QDQ8PDxAYDxEQEA8OFRYXFhYRFRUaHSggGholGxcVLTMiJSkrMC46Fx8zODcsQygtLi0BCgoKDQ0NDg0NDzcZFRkrKysrNystLS0rNysrKysrLSsrKystKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAPsAyQMBIgACEQEDEQH/xAAcAAEAAAcBAAAAAAAAAAAAAAAAAQMEBQYHCAL/xABEEAACAgEBAwgDCwoHAQAAAAAAAQIDBBEFEjEGBxMhQVFhcRQigSQyQlJicoKRoaKxCCMzNFRzg5LB0RUWRFOTwvBj/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDeIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB5nNRTbaUUm229EkuLbPRjG11/iGS8FfqVG5PaDT/S2PSVeF5NaSmu5xXwmBGrlFkZPr4WGrMb4ORbd6PXel20x3ZSlHuk0k+zUuGxduRyJTpnXOjMpSduPPRyUH72yEl1Tg9H6y8noy6xikkkkkkkklokl2IsfKjZs5xjlURXp+I3ZR2dNDq6TFk/izitPBqL7AL6Cl2Xnwyaa763rVbXGyD4PRrg12Ndq8CqAAAAAAAAAAAAAAAAAAAAAAAAAAAC3coNqei487d3fs9WumvttyJtQrrXnJry62eeTuy/RceNcpb90nK3It7bcmb3rJ+W8+pdiSXYW6z3XtJR442zYqcu6W0LY+qv4dUm/40e4yQAAAMb2T7kzrcN9WPlb+bh90bNV6TSvpSjNfvZdxkhY+V2BO2hW0rXMxLI5WN8qyCalVr3Tg5x+l4Fy2Xnwyaa763rVdXGyD7dJLXR+IFUAAAAAAAAAAAAAAAAAAAAAAAAUW2toxxcezIkm41VuSivfTlwjBeMpNJeZWmObU9151WLxoxN3Oyu6VurWNU+r4ynPw6OHeBW8ltmyx8aMbHrk2SlkZUuO9k2venp4JvReEUi7AAAAAMc2LH0TLtw+FF7nm4fdHekvSKV82ySkvC3T4JkZZuVGFOdSupWuXiWLJx1w33FNTp8pwc4/ST7ALyCn2fmQvqhdW9ara42QfyZLVa9zKgAAAAAAAAAAAAAAAAAAAAAAp9oZkKKp3WPSqquVk33RitX7S3clcKddLttWmXl2PKyF8Sc0lGryhBQj9HXtKfb3ujJowV+jTWbl/uapLoq3863R+KqkjIQAAAAAAAAMe2P7ly7cN9VN2/m4fck5L0ilfNnJSXhbp8EyEsnKvFlKlX1RbycOxZVKXGzdTVlP063OPm0+wuuFlQurhbXJSqtrjZCS4ShJJp/UwJwAAAAAAAAAAAAAAAAAAEJSSWreiS1b7Eu8iYJztbYuqxo4uNL3Xl2KvdWm/0EnuS016lrKUVr1e+AvHIz89G3PfHNucqvDDr1hQl4NKU/4rMjLdycx51YdFc4wjZXjUwnCK0hCUYpbqWr4FxAAAAAAAAAFg5O+57r8F+8rl6Vi8f1W5tuC+ZYrFp2JwL+a450tu27OysHLrqTri7qrrOvR0zlW51PsXVHVNv4L7mBscHmuaklJNOMkmmnqmn1po9AAAAAAAAAAAAAAAAADFKq4Zu0pzfrY+DXCrj6lmW5RtWvfubsXo+2SfYZBtfIVWPbbJ6RrotnJ8NFGLbNS80fLumvXDyJQrc5w6Cem7De3Ix3LJfHk1rvPi3prwTDcoAAAAAAAAAAFJtPZ8MiG5Na7so2QerThZH3sk+/8AuyrLPyn5SY2zqemyJ6J6qutddt0/iwj2vx4Li2gK3Ze6qYRiko1wjXur4O6tNPsKs1ZzO8o3k35NL6oQx8d1R3nKW7W5Qcpvtno6034I2mAAAAAAAAAAAAAAAABgnPRtX0fZU4J6TyrK8dd7g/Xs+5GS9pzL0z1cu/XVcU0+xruNuflB7X38mvFT9XHx3OS/+tz/ABUIL+c04FbW5A869+Go0ZClfiLSMdZfn6V3Qm+qcfkya07H2G8NgcpMXOhvY98JvTWUNd22HzoPrRyBj3uL8O1d5d8TNSalGbhOL1i1LRxfen2ewDr4HOmyucnaNCSWT0sV8GxKzq+c/W+0yTF56Lkl0mHXJ9rhNw/FsI3ODU8OeuGnXgWa/vk/+pIyue+MV1YEvN3PT7IAbfPM5qKbbSilq23oku9s0Hn89eXZ1VQopT7dxykvbJ6fdMT2xyhysz9YyrLo/FlP83/xrSH3QNycsOdnFxU68XdycjrW+npi1vvlZ8N+EdfNGhuUPKK/MtldbbKy6Wqc31bsfiQjwhDwRS5tqa07e8t7Ctg8x+0eh2tXFt6X120PzlHfWv0q4/WdMHHHJvPePk13pvWm6q7zVc1Jr2pNe07FqsUoqSesZRUk+9PrTCPQAAAAAAAAAAAAAQk9Fq+CWrfciJjHOXtX0TZWTanpOVXQ1v5drVafs3m/YBzdy52x6ZmXZOvq3ZE5Q/cx9Sv7sYmNk3Is3n4LqXkiUFR1GpAATYXtdrLhs2vfkktZWSkoxiutuT4JItR7ptlCSlGTUotOLT0aa4NMDKbNjZH+zcvoSKXOxJ1pK2E4qeu7vRcd7Tjpr3aoyDYvKSudE5WTcbYVrWOsn16wTdSXVHVR104axXBcMR21teWTPtVcddyOur7NZN9snotX2+xJRVFk17r8Ow8Rk1wZVbilHxKSyDRUQlIhqNQkBUYT9ZeOqOqubDaXpOycabes4Vejzfbv0t16vz3U/acowTXX3HQP5Pu0d/EyKNf0WTG2K7VC2CT+9Cf1gbWAAQAAAAAAAAAAA1P+UNtDcw6KE/0uRO1r5NUGl9s0bYNDflEZWuVRV/t4cpe2yzT8KwNOEVEn0Yrl4IuEMZJcAqztDUrcurQomgAIAD0DyNQPcLGuB6ndvcSUeoQbeiQEYx1J8aNFqVeNjaLr4lQ6wLK5M2v+T3nbmfZT2X4k/wCeqcWl9U5muLsJPrRlnNDkOna+MnwnZZU/KdU0vvKIHTwACAAAAAAAAAAAHO/PZrPar1XqqilLyi5/1OiDRnPDhuV7u0/RWuuzwrmoyjLyUtf5gNaxhoQkyc4EOjKqkshqU1mJ3F06Mj0ZBj1lLXYSzJJUp9hKlhxfYgLAC+f4fHuPcMSK4JAWrGxm+K6i5VUqPBFQq0etAJW6R0PehDQDy9C7cjtf8Sw3His7H+rfWv2alpcTLua/Z3SbQrt09SicXr33T9WMV5Rcn9QHRoACAAAAAAAAAAAGsuc3Gdd/SOOtORXuz1Wqc4rRp/R3ftNmlu29sivMolRZwl1xkuMJrhJf+7wOZc7D6OT3OuHZFvriu5Mpd7v1Xmv68DIuWHJ/JwLN26D6NvSFyTdU14S7/B9ZjMsgKmp6kSnd0XxSZFWR739bAnkCX0q+MHYvjP7v9gJgJbsXxn9cf7EOkXe/s/sBMYaJTtXe/s/seenXe/w/ACdoQbX/ALiSemj5+b1/E913oCrxMOVj013YdsuMtPBG2+a/Zydq3I6UUJzb+NY+pavtfF/RMA5H7DyM+3cqg9xNdJa01XWvlPv8OLOgtgbHrw6I019enXOb99ZPtkwLiAAgAAAAAAAAAAAAAo86lzi4SrjOuS0lCUYyjJdzT4mv9tc2eHc244ttMn21T0j7IyUkvYbMAGhdoc0s1+juv8pY6l9sZL8CxZXNpnx97Hf+hOP9GdLgDlizkHtJf6Vvyb/qiRLkXtP9js+w6uAHKH+TNp/sVn2D/Je0/wBjs+tHV4A5ThyH2k/9JNe0q6ObvaEuNW77Jv8A6nUIA53weau+T/OWWJdqjjyb+tyX4GYbD5ssWpp2UZF8l1/nJbsNfmwS6vNs2wALbs2jooKuFMK6orSMIxjCKXgkXFEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//Z"
+                  alt="black bag"
+                />
+                <div class="heart heart1">
+                  <i class="fa fa-heart"></i>
+                </div>
+              </div>
+              <div class="desc bag-desc">
+                <p>Bag</p>
+                <p>#3457013765</p>
+                <p class="remove" style="font-size: 13px; color: red">remove</p>
+              </div>
+            </div>
+            <div class="price bag-price">
+              $ <span class="price-span">25</span>
+            </div>
+            <div class="qty bag-qty">
+              <i class="fa fas fa-chevron-circle-left"></i>
+              <span class="count">1</span>
+              <i class="fa fas fa-chevron-circle-right"></i>
+            </div>
+            <div class="total bag-total">
+              $ <span class="total-span">25</span>
+            </div>
+          </div>
+          <div class="item-div sandals">
+            <div class="item">
+              <div class="item-image sandals-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsLj-L-xkSyx9Bd8ieNZviGjVtqxxBGuNSUQ&usqp=CAU"
+                  alt="black sandals"
+                />
+                <div class="heart heart2">
+                  <i class="fa fa-heart"></i>
+                </div>
+              </div>
+              <div class="desc sandals-desc">
+                <p>Sandals</p>
+                <p>#1376092468</p>
+                <p class="remove" style="font-size: 13px; color: red">remove</p>
+              </div>
+            </div>
+            <div class="price sandals-price">
+              $ <span class="price-span">20</span>
+            </div>
+            <div class="qty sandals-qty">
+              <i class="fa fas fa-chevron-circle-left"></i>
+              <span class="count">1</span>
+              <i class="fa fas fa-chevron-circle-right"></i>
+            </div>
+            <div class="total sandals-total">
+              $ <span class="total-span">20</span>
+            </div>
+          </div>
+          <div class="item-div blouse">
+            <div class="item">
+              <div class="item-image blouse-image">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="black blouse"
+                />
+                <div class="heart heart3">
+                  <i class="fa fa-heart"></i>
+                </div>
+              </div>
+              <div class="desc blouse-desc">
+                <p>Blouse</p>
+                <p>#0934568521</p>
+                <p class="remove" style="font-size: 13px; color: red">remove</p>
+              </div>
+            </div>
+            <div class="price blouse-price">
+              $ <span class="price-span">30</span>
+            </div>
+            <div class="qty blouse-qty">
+              <i class="fa fas fa-chevron-circle-left"></i>
+              <span class="count">1</span>
+              <i class="fa fas fa-chevron-circle-right"></i>
+            </div>
+            <div class="total blouse-total">
+              $ <span class="total-span">30</span>
+            </div>
+          </div>
+          <div class="feedback-div">
+            <p style="font-size: 15px; padding-left: 30px">ADD A NOTE</p>
+            <textarea
+              class="notes"
+              name="extranotes"
+              rows="2"
+              cols="50"
+              maxlength="200"
+              placeholder="   please leave a message"
+            ></textarea>
+          </div>
+        </div>
+        <div class="total-column">
+          <hr />
+          <div class="grand-total">
+            <h5 style="padding-bottom: 5px">
+              CART TOTAL: $ <span class="cart-total">75</span>
+            </h5>
+            <h6>Shipping and taxes are calculated at checkout</h6>
+          </div>
+          <div class="t-and-c">
+            <label for="t-and-c">
+              <input type="checkbox" id="t-and-c" />
+              I agree with the
+              <a
+                style="
+                  color: red;
+                  font-style: italic;
+                  text-decoration: underline;
+                "
+                >terms and conditions</a
+              >
+            </label>
+          </div>
+          <div class="checkout-button">
+            <button class="checkout" type="button">
+              CHECKOUT <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
