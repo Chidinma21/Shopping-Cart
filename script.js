@@ -17,6 +17,7 @@ for (let i = 0; i < heart.length; i++) {
 for (let i = 0; i < remove.length; i++) {
   remove[i].addEventListener("click", () => {
     itemDiv[i + 1].classList.add("removed");
+    grandTotal.innerHTML = +grandTotal.innerHTML - +total[i].innerHTML;
   });
 }
 
